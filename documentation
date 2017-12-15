@@ -1,0 +1,14 @@
+# STEPS FOR FIRST CLONES #
+
+- Change app's name
+- Change git remote origin to avoid push/pull conflicts
+- Change config.action_mailer.default_url_options in "/config/environments/production.rb"
+- Change Mailer @base url in "/app/mailers/application_mailer.rb"
+- Add icon.png in "/app/assets/images"
+- Set Up Mailer SMTP with Username and password in .end file
+
+
+
+Versioning:
+$ rails generate versionist:new_controller <name> <module namespace>
+$ rails generate versionist:new_controller v2 V2

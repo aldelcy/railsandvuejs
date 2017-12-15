@@ -1,0 +1,29 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+ 
+ $site_size:1100px;
+ 
+ $base_color:rgb(62, 93, 126);
+ $primary_color:rgb(158, 197, 240);
+ $secondary_color:rgb(238, 207, 167);
+ 
+ $primary_font: 'Roboto', sans-serif;
+ $secondary_font: 'Slabo 27px', serif;
+ $third_font: 'Playfair Display', serif;
+ $bold_font: 'Roboto', sans-serif;

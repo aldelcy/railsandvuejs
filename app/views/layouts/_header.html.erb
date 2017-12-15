@@ -1,0 +1,20 @@
+<div id="notice" class="hide <%= notice ? 'notice' : ('alert' if alert) %>">
+  <%= notice ? notice : ( alert if alert ) %>
+</div>
+
+<div class="header">
+    <div class="menu">
+        <% if current_user %> <div class="nav left side_bar_btn ion-android-more-vertical" data-show="left_sidebar"></div> <% end %>
+        <%= link_to "Home", root_path, class:'nav left home' %>
+        
+        <div id="mobile_nav">
+            <% @menu.each do |menu| %>
+                <%= link_to menu[0], menu[1], class:'nav center' %>
+            <% end %>
+            <%= link_to "Register", new_user_registration_path, class:'nav right' %>
+            <%= link_to "Login", new_user_session_path, class:'nav right' %>
+        </div>
+
+        <div class="nav right side_bar_btn ion-android-menu" data-show="mobile_nav"></div>
+    </div>
+</div>
